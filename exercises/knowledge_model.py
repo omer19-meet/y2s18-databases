@@ -15,23 +15,25 @@ class Knowledge(Base):
 
 
    def __repr__(self):
-   	return ("if you want to learn about {} " ", you should look at Wikipedia article called {}" ". We gave this article a rating of {} out of 10").format(
-   		self.topic,
-   		self.title,
-   		self.rate)
+        return ("if you want to learn about {} "
+                ", you should look at Wikipedia article called {}"
+                ". We gave this article a rating of {} out of 10".format(
+            self.topic,
+            self.title,
+            self.rate))
 
 
 
-k1 = Knowledge(topic="Farmercy", title="Banans", rate=8)
-print(k1)
+# k1 = Knowledge(topic="Farmercy", title="Banans", rate=8)
+# print(k1)
 
    # finished_lab = Column(Boolean)
 
-	# Create a table with 4 columns
-	# The first column will be the primary key
-	# The second column should be a string representing
-	# the name of the Wiki article that you're referencing
-	# The third column will be a string representing the 
-	# topic of the article. The last column will be
-	# an integer, representing your rating of the article.
+    # Create a table with 4 columns
+    # The first column will be the primary key
+    # The second column should be a string representing
+    # the name of the Wiki article that you're referencing
+    # The third column will be a string representing the 
+    # topic of the article. The last column will be
+    # an integer, representing your rating of the article.
 
